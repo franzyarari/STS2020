@@ -124,20 +124,6 @@ display: inline-block;
             transition: all 150ms ease-in; }
             .main-menu li a:hover { background-color: #144177; }
 
-li.home a { 
-    border-color: #385C89; 
-}
-li.home a.active {
-    color: #F4F9FA; 
-}
-
-li.about a { 
-    border-color: #5C7A9E;
- }
-li.about a.active { 
-    color: #e9b144;
-     }
-
 li.services a { 
     border-color: #7F96B3;
      }
@@ -145,15 +131,6 @@ li.services a.active {
   color: #974dea; 
 }
 
-li.portfolio a { border-color: #A1B3C7;
- }
-li.portfolio a.active { color: #38e395; 
-}
-
-li.contact a { border-color: #C4CFDC;
- }
-li.contact a.active { color: #e3387c; 
-}
 
 .responsive-navigation { position: relative;
     width: 100%; display: block; z-index: 9999; }
@@ -226,161 +203,6 @@ li.contact a.active { color: #e3387c;
     bottom: 10px;
 }
 
-.main-slider { 
-    width: 100%; 
-    height: 570px; 
-}
-
-.flexslider .slides { 
-    height: 570px; 
-}
-
-.slider-caption { position: absolute;
- vertical-align: middle; 
- width: 100%;
-  text-align: center;
-   height: 100;
-    z-index: 8;
-     color: white; 
-     top: 200px;
-      }
-.slider-caption h2 { font-size: 48px;
- text-transform: uppercase;
-  font-weight: 800; 
-  margin-bottom: 30px;
-   }
-.slider-caption p {
- font-size: 16px;
-  text-transform: uppercase;
-   letter-spacing: 2px; width: 50%; 
-   margin: 0 auto 30px auto; 
-   line-height: 1.8em; }
-
-.flexslider { 
-    background-color: #DBE5EF;
-     height: 570px; 
-     overflow: hidden; margin: 0;
-      }
-
-.flexslider img {
- position: relative;  
- width: 100%; 
- z-index: 7; 
-}
-
-.flex-control-nav {
- bottom: 15px;
-  z-index: 9;
-   }
-
-.flex-control-paging li a {
- background-color: white; 
- border: 2px solid black; 
- opacity: 0.6; 
-}
-.flex-control-paging li a:hover {
- opacity: 1; background: white; 
-}
-.flex-control-paging li a.flex-active { 
-  opacity: 1; background: white;
-   }
-
-.welcome-text { 
-  padding: 150px; 
-  text-align: center;
-   }
-.welcome-text a {
- color: #38a9e3;
-  }
-.welcome-text h2 {
- color: #00325B;
-  font-weight: 300;
-   text-transform: uppercase;
-    font-size: 32px;
-     }
-.welcome-text p { 
-  color: #004691;
-   }
-
-.member-item { overflow: hidden;
- height: auto;
-  }
-.member-item:hover .overlay { opacity: 1;
- visibility: visible;
-  -webkit-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
-      }
-
-.member-thumb {
- width: 100%;
-  overflow: hidden;
-   height: auto;
-    position: relative;
-     }
-.member-thumb img {
- width: 100%; 
-}
-.member-thumb .overlay { 
-  position: absolute;
-   top: 0; 
-   right: 0;
-    opacity: 0;
-     visibility: hidden;
-      width: 100%;
-       height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-         }
-
-.member-content { margin-top: 10px;
- overflow: hidden;
-  text-align: center;
-   }
-.member-content h4 { text-transform: uppercase;
- font-size: 18px;
-  color: #004691;
-   }
-.member-content p { color: #aaaaaa;
- font-size: 12;
-  }
-
-.social-member li {
- display: inline;
-  float: left; 
-  width: 40px; 
-  height: 40px;
-   background-color: #004691; 
-   text-align: center;
-    margin-right: 1px;
-     }
-.social-member li a { 
-  display: block;
- line-height: 40px;
-  color: white;
-}
-.social-member li:hover { 
-  background-color: #e5a424;
- }
-
-.our-story { 
-  margin-top: 80px;
-   }
-.our-story h3 { color: #003A73;
- font-weight: 300;
-  text-transform: uppercase; 
-  font-size: 24px;
-   margin: 0 0 20px 0; 
- }
-
-.story-image { 
-  margin-top: 30px;
- overflow: hidden;
-  }
-.story-image img { 
-  width: 100%; 
-  height: auto; 
-}
 .divider-general-ser{/*LINEA DIVISION ENTRE  SECTORES DE PAGINA PRINCIPAL (INDEX)*/
     width: 100%;
     height:2px;
