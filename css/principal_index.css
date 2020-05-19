@@ -11,11 +11,7 @@ html, body {
     background-color: #fff;
     position: relative;
 }
-/*#particles-js{
-    width: 100%;
-    height: 100vh;
-    background:rgba(0,0,0,0.1);
-}*/
+
 .modal{
     width: 100%;
     height: 100vh;
@@ -110,6 +106,18 @@ video{
     padding: 0;
     background-color:  #0F44B1 ;
 }
+
+.service-banner { 
+  background-color: #FFA81E;
+  text-align: center;
+  padding-top: 10px;
+  }
+
+.service-banner .service-content h3 { 
+ margin: 0;
+ font-size: 20px;
+ color:#212529 ;
+  }
 
 .table > tbody > tr > td,
 .table > thead > tr > th{
@@ -320,62 +328,8 @@ video{
 }
 
 /************** =====   |Sitios de la institución ***************/
-.important-links-index{/**LINKS DE LA PAGINA PRINCIPAL DIV DE CIRCULOS /*/
-    /*background: */
-    background-color: #01528A; /*FONDO DE LINKS*/
-    padding: 60px 0;
-    height: auto;
-}
-.important-links-index a{/**LINKS DE LA PAGINA PRINCIPAL DIV DE CIRCULOS /*/
-    border: 6px solid #3893F6;/************** plomo***************/
-    background-color: transparent;
-    height: 130px;
-    width: 130px;
-    display: inline-block;
-    border-radius: 50%;
-    color: #F9F9FA;
-    margin: 30px 20px;
-    text-align: center;
-    transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    -ms-transition: .3s all ease-in-out;
-    -webkit-transition: .3s all ease-in-out;
-}
-.important-links-index a:hover{
-    text-decoration: none;
-    background-color:  #233644;/************** fondo circulo***************/
-    border: 6px solid  #EEEBC2 ;/************** borde circulo***************/
-    transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-}
-.important-links-index a:hover p,
-.important-links-index a:hover i{
-    color: #FFF;
-}
-.important-links-index a:active,
-.important-links-index a:focus{
-    outline: none;
-    text-decoration: none;
-}
-.important-links-index a i,
-.important-links-index a p{
-    transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    -ms-transition: .3s all ease-in-out;
-    -webkit-transition: .3s all ease-in-out;
-    transform: translateY(25px);
-    -moz-transform: translateY(25px);
-    -ms-transform: translateY(25px);
-    -webkit-transform: translateY(25px);
-}
-.important-links-index a i{
-    font-size: 45px;
-}
-.important-links-index a p{
-    font-size: 18px;
-}
+
+
 /************** Estilos eventos***************/
 
 /*
@@ -386,57 +340,14 @@ video{
     padding: 50px 0;
 	float:0;
 }
-.scroll-navigation-ins{/*Nav fija parte izquierda --------------------------------*/
-position: fixed;
-left: 0;
-/*border-right: 20px solid  #DBE5EF ;/*borde*/
-float: left; width: 20%; 
-height: 100%; 
-position: fixed; 
-background-color: #004A96; 
-color: white; 
-}
+
 .section-content { 
 	padding: 0 7%;
 	margin-bottom: 100px;
 }
-.scroll-navigation-ins ul li{/*Diseño de letras */
-    display: block;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-    height: 35px;
-    line-height: 35px;
-    font-size: 16px;
-    margin: 0;
-    color:  #fff ;/*COLOR DE LAS LETRAS DEL MENU FIJO*/
-    -mos-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.scroll-navigation-ins ul li:hover{/*DISEÑO SOBREVUELO*/
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    color: #C4CF84;
-}
-.scroll-navigation-ins figure img{
-    height: 60px;
-	position:center;
-}
-.scroll-navigation-ins figure {
-    position:center;
-	
-}
-#mapa-ins{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 500px;
-    border-radius: 4px;
-}
+
+
+
 
 .logoimg { 
         margin: 50px 0; 
@@ -490,37 +401,7 @@ color: white;
     background:#EBF5FB;
    display:inline-block
 }
-.folio-img{
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
 
-.portafolio-container{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.portafolio-item{
-    width: 30%;
-    position: relative;
-    overflow: hidden;
-}
-
-.portafolio-img{
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.portafolio-item:hover .portafolio-img{
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-}
 
 .tarjetas2{
     position: relative;
@@ -534,67 +415,7 @@ color: white;
 /*========================================================================================
 =                                             Estilos galeria                                           =
 ==========================================================================================*/
-.section-gallery-ins{
-    background-color: #fff; 
-    padding: 30px 0;
-    width: 100%;
-}
-.section-gallery-ins > article{
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-.section-gallery-ins > article > h2{
-    padding-bottom: 40px;
-}
-.tile-gallery{
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #F7F7F7;
-    border: 3px dashed #EFCDCD;
-    margin: 10px 0;
-}
-.tile-gallery img{
-    max-width: 200px;
-    max-height: 200px;
-    margin: 15px auto;
-    display: block;
-    border-radius: 50%;
-}
-.tile-gallery p{
-    color: #000000;
-}
-.tile-gallery span{
-    display: block;
-    color: #696969;
-    margin-bottom: 10px;
-}
-.tile-gallery a{
-    color: #B0B0B0;
-    display: block;
-    font-size: 19px;
-    margin: 10px 0;
-    text-align: center;
-    transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    -ms-transition: .3s all ease-in-out;
-    -webkit-transition: .3s all ease-in-out;
-}
-.tile-gallery a:hover{
-    text-decoration: none;
-    transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    color: #333;
-}
-.tile-gallery a:active,
-.tile-gallery a:focus{
-    outline: none;
-    text-decoration: none;
-}
+
 /*=======================================================================================================
 =                                        Media queries    Dispositivos  Preguntas de los medios                                     =
 ========================================================================================================*/

@@ -1,41 +1,6 @@
 /*======================================================================================
 =                                ESTILOS GENERALES                                     =
 ========================================================================================*/
-.main-menu, 
-.responsive-menu ul, 
-.social-member, 
-.progess-bars, 
-.first-footer 
-.social-footer ul { 
-padding: 0; 
-margin: 0; 
-list-style: none; 
-}
-
-body { 
-    font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif;
-    color: #0F44B1;
-   font-weight: 300;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%;
-}
-
-
-.left{
-    float: left;
-    background:blue;
-}
-/*.right{
-    float: right;
-    background:blue;
-   
-}*/
-.center{
-    background:green;
-    margin:0 auto; 
-   display:inline-block
-}
 
 a, a:hover, a:focus { 
     text-decoration: none;
@@ -56,16 +21,6 @@ h1, h2, h3, h4, h5, h6 {
    }
 
 
-/*#main-content { 
-    margin-left: 300px;
-    width: 100%; 
-}
-*/
-/*#main-content, .full-width-slider { 
-    float: right;
-    width: 100%; 
-}*/
-
 .border-img-edif{
 border:5px solid #B7B9B6;
 border-top-left-radius: 105px;
@@ -73,24 +28,25 @@ border-top-left-radius: 105px;
 
 .foto-edif-hansa { 
 margin-top: 60px ;
-/*height:500px;*/
-float: left; */
+float: left; 
 margin-bottom:2px:
 
 }
-*/
-.section-content { 
-   padding: 0 2%;*/
+
+/*.section-content { 
+   padding: 0 2%;
     margin-bottom: 200px;
 }
-
-/*.rightg{
-    float: right;
-    background:#fff
-    width: 80%;
-
+*/
+.divider-general-ser{/*LINEA DIVISION ENTRE  SECTORES DE PAGINA PRINCIPAL (INDEX)*/
+    width: 100%;
+    height:2px;
+    margin: 0;
+    padding: 0;
+    background-color:  #00507D;
+    position: relative;
 }
-*/.section-title { 
+.section-title { 
 border-top: 4px solid;
 margin-bottom: 60px;
 align-content: left; 
@@ -411,11 +367,24 @@ li.contact a.active { color: #e3387c;
  overflow: hidden;
   text-align: center;
    }
-.member-content h4 { text-transform: uppercase;
+.member-content h4 { 
+ text-transform: uppercase;
  font-size: 18px;
   color: #004691;
    }
-.member-content p { color: #aaaaaa;
+
+.content-text { margin-top: 10px;
+ overflow: hidden;
+  text-align: left;
+   }
+.content-text h4 { 
+ text-transform: uppercase;
+ font-size: 18px;
+  color: #004691;
+   }
+
+.member-content p { 
+ color: #aaaaaa;
  font-size: 12;
   }
 
@@ -454,7 +423,8 @@ li.contact a.active { color: #e3387c;
   height: auto; 
 }
 
-.service-item { background-color: #3474B4;
+.service-item { 
+background-color:#567286;
  color: white;
   }
 .service-item .service-icon { width: 25%;
@@ -604,7 +574,7 @@ li.contact a.active { color: #e3387c;
 .bottom-footer { 
   background-color: #06141E;
    color: #949da2;
-    padding: 25px 7% 16px 7%;
+    padding: 40px 7% 32px 7%;
      }
 .bottom-footer a { 
   color: white;
@@ -935,21 +905,20 @@ video{
     padding: 50px 0;
 	float:0;
 }
-.scroll-navigation-ins{/*Nav fija parte izquierda --------------------------------*/
+
+/*==========================Nav fija parte izquierda=================================================*/
+.scroll-navigation-ins{
 position: fixed;
 left: 0;
-/*border-right: 10px solid  #556370 ;/*borde*/*/
+/*border-right: 10px solid  #556370 ;/*borde*/
 float: left; width: 20%; 
 height: 100%; 
-
 background-color: #DDE8F0; 
 color: #556370;
-/*font-family: 'geneva','verdana','sans-serif'; */
 }
 
 .scroll-navigation-ins ul li{/*Diseño de letras */
     display: block;
-   
     width: 100%;
     text-align: center;
     cursor: pointer;
@@ -977,16 +946,10 @@ color: #556370;
 }
 .scroll-navigation-ins figure {
     position:center;
-	
 }
-#mapa-ins{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 500px;
-    border-radius: 4px;
-}
+/*===========================================================================================*/
 
+/*===============================logo sts sector superior izquierdo=======================*/
 .logoimg { 
         margin: 50px 0; 
         background-color: #FFFFFF; 
@@ -1003,6 +966,7 @@ color: #556370;
     .logoimg span { color: #bee3f6;
         font-size: 13px;
     }
+/*=========================================================================================*/
 
 .events-ins{
     position: relative;
