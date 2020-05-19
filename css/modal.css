@@ -1,0 +1,59 @@
+body {
+	text-align: center;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.modal-body{
+	width: 100%;
+	height: auto;
+	background:#004A96;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	animation: modal 2s 2s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+#cerrar{
+	display: none;
+}
+
+#cerrar + label {
+	position: fixed;
+	color:#fff;
+	font-size: 25px;
+ 	z-index: 50;
+	background:darkred;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius:50%;
+	right: 10px;
+	cursor: pointer;
+	animation: modal 2s 2s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+#cerrar:checked + label,#cerrar:checked ~ .modal{
+	display: none;
+}
+.close{
+	color: #f2f2f2;
+	font-size:30px;
+	font-weight: bold;
+}
+.close:hover{
+	color:#7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
+}
+@keyframes modal{
+	100%{
+			visibility: visible;
+	opacity: 1;
+	}
+}

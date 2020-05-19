@@ -1,0 +1,29 @@
+
+.position-logo{
+	top: 150px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+.letras-slider{
+	width: 80%;
+	margin: auto;
+}
+.letras-slider h1{
+	color: #fff;
+	font-family: rale;
+	font-size: 35px;
+}
+.letras-slider p{
+	color: #fff;
+	font-size: 25px;
+	font-family: rale;
+	padding-top: auto;
+}
+.letras-modal p{
+	color: #6A6A6A;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 50px;
+}

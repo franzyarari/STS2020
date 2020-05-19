@@ -1,0 +1,18 @@
+#particles-js{
+	
+	/*background-attachment: contain;*/
+width: 100%;
+height: calc(100vh - 0px);
+background: url(img/f-1.jpg);
+background-attachment: fixed;
+background-blend-mode: soft-light;
+background-position: center;
+background-size: cover;
+
+}
+.img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+}

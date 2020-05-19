@@ -1,0 +1,350 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
+*{
+	box-sizing: border-box;
+}
+
+.loader-container{
+	position: relative;
+	width: 60%;
+	height: 60%;
+	margin: 10px;
+
+}
+
+.loader-container .loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+    border: solid 4px transparent;
+    border-top-color: #0dac77;
+    border-left-color: #0dac77;
+    border-radius: 50%;
+    animation: loader 1.2s linear infinite;
+}
+
+.loader-container .loader2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	height: 70%;
+    border: solid 4px transparent;
+    border-top-color: #003A73;
+    border-left-color: #003A73;
+    border-radius: 50%;
+    animation: loader2 1.2s linear infinite;
+
+}
+
+@keyframes loader{
+	0%{
+		transform: translate(-50%, 50%) rotate(0deg)
+	}
+	100%{
+		transform: translate(-50%, 50%) rotate(360deg)
+	}
+}
+
+@keyframes loader2{
+	0%{
+		transform: translate(-50%, 50%) rotate(0deg)
+	}
+	100%{
+		transform: translate(-50%, 50%) rotate(-360deg)
+	}
+}
+
+html, body {
+    height: 100%;/*ALTURA*/
+    margin: 0;
+    padding: 0;/*RELLENO*/
+    width: 100%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;/*FUENTE-TAMAÑO*/
+    background-color: #fff;
+    position: relative;
+}
+h1, h2, h4, h5 {
+	text-transform: uppercase;
+	color: #212529;
+	font-family: rale;
+	letter-spacing: 1px;
+}
+h2{
+	font-size: 26px;
+	color: #333;
+	background: ;
+	color: #212529;
+}
+h3{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top:20px; 
+	font-weight: normal;
+	color: #212529;
+}
+h4{
+	margin-top: 15px;
+	font-size: 16px;
+	color: #556370;
+}
+h5{
+	font-family: Lato, sans-serif;
+	line-height: 1.5;
+	font-weight: normal;
+	padding: 10px 0;
+	font-size: 12px;
+}
+p{/*P es la etiqueta de parrafo aca estan los estilos de llas letras delc contenido */
+	color: #212121;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height:150% ;
+	padding: 5px 20px;
+}
+
+.pfooter{/*P es la etiqueta de parrafo aca estan los estilos de llas letras delc contenido */
+	color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height:150% ;
+
+
+}
+
+
+.wappresentacion{
+	width: 90%;
+	margin: auto;
+	clear: both;
+}
+.wap{
+	width: 90%;
+	margin: auto;
+	clear: both;
+}
+.bienvenidos{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.video-presentacion{
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    height: auto;
+    background-color: #DDE8F0;
+       -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+
+.contenedor-columnas{
+	width: 100%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.columnasx3{
+	width: 33.333%;
+	float: left;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+.columnasx3 img{
+	width: 100%;
+
+}
+.banner-1{
+	width: 100%;
+	background: #0B1704;
+	clear: both;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 0.4s;
+}
+.banner-intitucional{
+	width: 100%;
+	background: #0B1704;
+	clear: both;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 0.4s;  }
+
+.banner-servicios{
+	width: 100%;
+	background: #0B1704;
+	clear: both;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 0.4s;
+}
+
+.banner-1:hover{
+	background: #78D3A7;
+	transition: .4s;
+}
+.banner-1 h3{
+	color: #fff;
+	font-size: 32px;
+}
+.banner-video h3{
+	color: #fff;
+	font-size: 32px;
+}
+.banner-1 a{
+	text-decoration: none;
+	margin-left: 20px;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+.columnasx3 i{
+	float: left;
+	padding-right: 20px;
+	color: #444;
+}
+.columnasx3 h4{
+	padding-bottom: 20px;
+}
+.banner-2{
+	margin-top: 50px;
+	background: url(img/2.jpg);
+	float: left;
+	width: 100%;
+	height: 300px;
+	background-repeat:no-repeat; /* No se repetira */
+	background-size:cover; /* Imagen al 100% del ancho */
+	background-attachment: fixed; /* Posicion fija para la imagen */
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+.banner-2 h3{
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	font-size: 32px;
+	height: 100%;
+	padding-top: 5%;
+}
+.banner-2 a{
+	text-decoration: none;
+	margin-left: 20px;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+
+
+
+.important-links-index{/**LINKS DE LA PAGINA PRINCIPAL DIV DE CIRCULOS /*/
+    background-color: #FFFFFF; /*FONDO DE LINKS*/
+    padding: 60px 0;
+    height: auto;
+}
+.important-links-index a{/**LINKS DE LA PAGINA PRINCIPAL DIV DE CIRCULOS /*/
+    border: 6px solid #38E395;/*************borde***********/
+    background-color: transparent;
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #114195;
+    margin: 30px 20px;
+    text-align: center;
+    transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -ms-transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+}
+.important-links-index a:hover{
+    text-decoration: none;
+    background-color:  #fff;/************** fondo circulo hover***************/
+    border: 6px solid  #114195;/************** borde circulo hover***************/
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.important-links-index a:hover p,
+.important-links-index a:hover i{
+    color: #38E395;
+}
+.important-links-index a:active,
+.important-links-index a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.important-links-index a i,
+.important-links-index a p{
+    transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -ms-transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+}
+.important-links-index a i{
+    font-size: 45px;
+}
+.important-links-index a p{
+    font-size: 18px;
+}
+/*LINEA DIVISION ENTRE  SECTORES DE PAGINA PRINCIPAL (INDEX)*/
+.divider-general-footeru{
+    width: 100%;
+    height:10px;
+    margin: 0;
+    padding: 0;
+    background-color:#556370;
+}
+/***************==============================  ESTILOS  DE PIE DE PAGINA ============================================================***************/
+.footer{ 
+    clear:both;
+    color: #fff;
+    background-color:#1B1F23;/*COLOR AZUL DE PIE DE PAGINA*/
+    position: relative;
+    height: auto;
+}
+.footer-copyright{
+    padding: 20px 0 10px 0;
+    font-size: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(189, 217, 241, 0.5); /*COLOR LINEA EN PIE DE PAGINA*/
+}
+.links-footer,
+.subtitles-footer{
+    padding-left: 50px;
+}
+
+.links-footer li a{
+    color: #fff;
+}
+.links-footer li a:hover{
+    color: #EEEBC2; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
+    text-decoration: none;
+}
+.links-footer li a:active,
+.links-footer li a:focus{
+    outline: none;
+    text-decoration: none;
+    color: #FFCA28; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
+}
