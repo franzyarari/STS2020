@@ -1,23 +1,43 @@
+
+<!--  -->
+<?php
+
+$destino  = "contactolpz@sts.com.bo";
+$nombre   = $_POST["nombre"];
+$correo   = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$mensaje  = $_POST["mensaje"];
+
+$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTeléfono: " .$telefono . "\nMensaje: " . $mensaje;
+
+mail($destino, "Formulario Contacto Pagina Web STS ", $contenido);
+
+header("Location:contactos.html");
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<link  rel="icon"   href="img/logo_sts.png" type="image/png" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta charset="UTF-8">
+  <link  rel="icon"   href="img/logo_sts.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
 
-	<title>STS Bolivia Ltda.</title>
+  <title>STS Bolivia Ltda.</title>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/estilos_contactos.css">
-	<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+  <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-	<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-	<link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="css/landing-page.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,51 +45,51 @@
 <!--========= Links de navegación principal horizontal cabercera azul  ====================-->
 <header class="full-reset header">
 
-		        <nav class="full-reset navigation">
-		        	<ul class="full-reset list-unstyled">
-		        		<li><a href="index.html"><em class="fa fa-home  "></em>Inicio</a></li>
-		        		<li><a href="institucional.html">Institucional</a></li>
-		        		<li><a href="servicios.html">Servicios</a></li>
-		        		<li><a href="contactos.html">Contactos</a></li>
-		        		<li><a href="#" class="btm-mega-menu"> Más &nbsp;<i class="fa fa-caret-down"></i></a></li>
-		        	</ul>
-		        </nav>
+            <nav class="full-reset navigation">
+              <ul class="full-reset list-unstyled">
+                <li><a href="index.html"><em class="fa fa-home  "></em>Inicio</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="#" class="btm-mega-menu"> Más &nbsp;<i class="fa fa-caret-down"></i></a></li>
+              </ul>
+            </nav>
 
 <!--================== Mega menu opcion de (Mas) sobrepuesto ==============================-->
 <div class="full-reset mega-menu">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-4">
-				<span class="full-reset titles">Recursos</span>
-				<ul class="list-unstyled full-reset">
-					<li><a href="#!" class="open-link-newTab"><i class="fa fa-search"></i>&nbsp; </a></li>
-					<li><a href="#!" class="open-link-newTab"><i class="fa fa-graduation-cap"></i>&nbsp; Plataformas</a></li>
-				</ul>
-			</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <span class="full-reset titles">Recursos</span>
+        <ul class="list-unstyled full-reset">
+          <li><a href="#!" class="open-link-newTab"><i class="fa fa-search"></i>&nbsp; </a></li>
+          <li><a href="#!" class="open-link-newTab"><i class="fa fa-graduation-cap"></i>&nbsp; Plataformas</a></li>
+        </ul>
+      </div>
 
-			<div class="col-xs-12 col-sm-4">
-				<span class="full-reset titles">Enlases</span>
-				<ul class="list-unstyled full-reset">
-					<li><a href="#!" class="open-link-newTab"><i class="fa fa-university"></i>&nbsp; Proyectos</a></li>
-					<li><a href="#!"><i class="fa fa-paw"></i>&nbsp; Reecorrido</a></li>
-					<li><a href="#!"><i class="fa fa-globe"></i>&nbsp; A.T.T</a></li>
-					<li><a href="#!" class="open-link-newTab"><i class="fa fa-flask"></i>&nbsp; Convenios </a></li>
-					<li><a href="#!" class="open-link-newTab"><i class="fa fa-gavel"></i>&nbsp; Contribucion</a></li>
-				</ul>
-			</div>
+      <div class="col-xs-12 col-sm-4">
+        <span class="full-reset titles">Enlases</span>
+        <ul class="list-unstyled full-reset">
+          <li><a href="#!" class="open-link-newTab"><i class="fa fa-university"></i>&nbsp; Proyectos</a></li>
+          <li><a href="#!"><i class="fa fa-paw"></i>&nbsp; Reecorrido</a></li>
+          <li><a href="#!"><i class="fa fa-globe"></i>&nbsp; A.T.T</a></li>
+          <li><a href="#!" class="open-link-newTab"><i class="fa fa-flask"></i>&nbsp; Convenios </a></li>
+          <li><a href="#!" class="open-link-newTab"><i class="fa fa-gavel"></i>&nbsp; Contribucion</a></li>
+        </ul>
+      </div>
 
-			<div class="col-xs-12 col-sm-4">
-				<span class="full-reset titles">Archivos</span>
-				<ul class="list-unstyled full-reset">
-					<li><a href="link/galeria.html">Galeia</a></li>
-					<li><a href="#!"><i class="fa fa-star-o"></i>&nbsp; Institucion</a></li>
-					<li><a href="#!" class="open-link-newTab"><i class="fa fa-file-text-o"></i>&nbsp; Infra estructura</a></li>
-					<li><a href="#!"><i class="fa fa-download"></i>&nbsp; ArchivosS</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<i class="fa fa-times-circle btm-mega-menu close-mega-menu fa-2x"></i><!--btn de cierre de mega menu Mas (X)-->
+      <div class="col-xs-12 col-sm-4">
+        <span class="full-reset titles">Archivos</span>
+        <ul class="list-unstyled full-reset">
+          <li><a href="link/galeria.html">Galeia</a></li>
+          <li><a href="#!"><i class="fa fa-star-o"></i>&nbsp; Institucion</a></li>
+          <li><a href="#!" class="open-link-newTab"><i class="fa fa-file-text-o"></i>&nbsp; Infra estructura</a></li>
+          <li><a href="#!"><i class="fa fa-download"></i>&nbsp; ArchivosS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <i class="fa fa-times-circle btm-mega-menu close-mega-menu fa-2x"></i><!--btn de cierre de mega menu Mas (X)-->
 </div>
 
 <!--====================== Boton de cierre  megamenu mobil ===============================-->
@@ -77,21 +97,20 @@
 </header>
 
 <!--================ Menu secundario fijo sector lado izquierdo =========================-->
-<nav class="hidden-xs scroll-navigation-ins  " class="hidden-xs hidden-sm">	
-	<figure class="full-reset ">	
-		<div class="logoimg">
-			<a href="index.html"> 
+<nav class="hidden-xs scroll-navigation-ins  " class="hidden-xs hidden-sm"> 
+  <figure class="full-reset ">  
+    <div class="logoimg">
+      <a href="index.html"> 
                         <img src="img/logosts.png " width="180px">  
                   </a>
-		</div>
-	</figure>
-	<ul class="list-unstyled full-reset ">
-		<li data-href="#foto-inst"><h4>CONTACTOS</h4></li>
-    <li data-href="#localizacion">Localización</li>
-		<li data-href="#contacto-con-sts">Formulario</li>
-		
+    </div>
+  </figure>
+  <ul class="list-unstyled full-reset ">
+    <li data-href="#foto-inst"><h4>CONTACTOS</h4></li>
+    <li data-href="#sec_tel">Hubicación </li>
+    <li data-href="#sec_corp">Envienos un Formulario</li>
 
-	</ul>
+  </ul>
 </nav>
 
 <!--======================= Contenedor Principal ==============================-->
@@ -105,37 +124,15 @@
 <!--================ contenido Formulario ==========================================-->
         <form action="enviar.php" method="post">
 
+          <h2>Contacte con nosotros</h2>
+          <p class="intro">Agradecemos el interés por contactarse con nosotros, si desea recibir mayor información sobre alguno de nuestros servicios o productos, por favor rellene el siguiente formulario y enseguida estaremos respondiendo.
+          </p>
 
+          <hr>
 
           <div class="row">
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <article class="full-reset" id="ubicacion-ins">
-                  <div class="page-header">
-                    <h1 id="localizacion"><i class="fa fa-map"></i> &nbsp; Ubicación geográfica</h1>
-                  </div>
-                  <p class="lead text-justify">
-                  </p>
-                  <br><br>
-                  <h3 class="text-center titles"><i class="fa fa-map-marker"></i> &nbsp; Mapa de localización</h3>
-                  <br>
-                  <div id="mapa-ins"></div>
-                </article>
-              </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <article class="full-reset" id="ubicacion-ins">
-                  <div class="page-header">
-                    <h1 id="contacto-con-sts"> &nbsp; Contacte con Nosotros </h1>
-                  </div>
-                </article>
-</div>
-
-              <p class="intro">Agradecemos el interés por contactarse con nosotros, si desea recibir mayor información sobre alguno de nuestros servicios o productos, por favor rellene el siguiente formulario y enseguida estaremos respondiendo.
-              </p>
-
-              <hr>
-
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
               <input type="text" name="nombre"   placeholder="Nombre"                  required>
               <input type="text" name="correo"   placeholder="Correo"                  required>
               <input type="text" name="telefono" placeholder="Teléfono"                required>
@@ -144,8 +141,9 @@
 
               </textarea>
               <p></p>
-
+              
               <input type="submit" value="Enviar" id="boton">
+
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -153,10 +151,8 @@
               <p class="info"><strong>¿Deseas un servicio?</strong> Ponte en contacto con nosotros a través de este formulario.
               </p>
               <p class="info">Responsabilidad en cada uno de sus proyectos <strong> </p>
-                <img src="img/img_contacto2.jpg" class="img-rounded img-responsive" alt="Placeholder image"> 
+              <img src="imagenes/img_contacto2.jpg" class="img-rounded img-responsive" alt="Placeholder image"> 
               </div>
-
-
 
             </div>
 
@@ -166,14 +162,14 @@
           <br>
 
 
-        </div> <!-- /.container-fluid -->	
+        </div> <!-- /.container-fluid --> 
       </section><!-- col-md-11 order-12 --->
-  </div><!-- /.row justify-content-around-->	
+  </div><!-- /.row justify-content-around-->  
 </section><!-- /container right- -->
 
 <!--================= contenido footer =========================================-->
 
-		<div class="site-footer">
+    <div class="site-footer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -256,6 +252,6 @@
 <script src="js/main.js"></script> 
 <script src="js/custom.js"></script>
 <script src="js/jiii.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
 </body>
 </html>
