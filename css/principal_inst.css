@@ -424,7 +424,7 @@ li.contact a.active { color: #e3387c;
 }
 
 .service-item { 
-background-color:#567286;
+background-color:#00196D;
  color: white;
   }
 .service-item .service-icon { width: 25%;
@@ -688,33 +688,23 @@ video{
     background-color:  #0F44B1 ;
 }
 
-.table > tbody > tr > td,
-.table > thead > tr > th{
-    vertical-align: middle;/*medio*/
-}
+
 
 /*======================= IZQUIERDA DERECHA CENTRO ==================== */
 
 /***************======================== ESTILOS DEL HEADER y NAV  **************************************************************/
 .header{
-    background-color: #004A96; /*BARRA AZUL NAV HEADER CABECERA*/
+    /*background-color: #004A96;*/ /*BARRA AZUL NAV HEADER CABECERA*/
     height: 50px;
     color: #fff;/*COLOR  BLANCO DE  LETRAS DE  LEYENDA SOLUCIONES INT.*/
-    position: fixed;
+position: fixed;
     z-index: 97;
+   
+  
 }
 
-.logo{/*LEYENDA LETRA CABECERA SOLUCIONES*/
-    height: 50px;
-    line-height: 50px;
-    text-align: left;
-    font-size: 25px;
-    font-family: 'Fjalla One', sans-serif;
-    width: 15%;
-    position: absolute;
-    top: 0;
-    left: 0;/*izquierda*/
-}
+/**/
+
 
 .navigation{/*NAVEGACION EN CABECERA LISTA DE OPCIONES*/
     height: 50px;
