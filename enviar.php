@@ -2,7 +2,7 @@
 <!--  -->
 <?php
 
-$destino  = "contactolpz@sts.com.bo";
+$destino  = "fyarari@sts.com.bo";
 $nombre   = $_POST["nombre"];
 $correo   = $_POST["correo"];
 $telefono = $_POST["telefono"];

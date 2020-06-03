@@ -124,7 +124,7 @@ video{
     vertical-align: middle;/*medio*/
 }
 
-/*======================= IZQUIERDA DERECHA CENTRO ==================== */
+
 
 /***************======================== ESTILOS DEL HEADER y NAV  **************************************************************/
 .header{
@@ -215,7 +215,7 @@ video{
 .button-menu-mobile:hover{
     color: #fff;
 }
-/*//////////////////////////////ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU //////////////////////////////////////////////*/
+/*///ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU /////////////////*/
 .mega-menu{
     position: absolute;
     top: 50px;

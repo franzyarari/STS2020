@@ -1,6 +1,10 @@
 /*======================================================================================
 =                                ESTILOS GENERALES                                     =
 ========================================================================================*/
+/*header {
+  background-color: #004691;
+  padding-top: 25px;
+}*/
 
 a, a:hover, a:focus { 
     text-decoration: none;
@@ -13,6 +17,12 @@ a, a:hover, a:focus {
 h1, h2, h3, h4, h5, h6 {
  font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
  }
+h3 {
+  font-size: 24px;
+  border-bottom: 1px solid #004691;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
 
 *, *:before, *:after {
  -moz-box-sizing: border-box;
@@ -20,24 +30,6 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
    }
 
-
-.border-img-edif{
-border:5px solid #B7B9B6;
-border-top-left-radius: 105px;
-}
-
-.foto-edif-hansa { 
-margin-top: 60px ;
-float: left; 
-margin-bottom:2px:
-
-}
-
-/*.section-content { 
-   padding: 0 2%;
-    margin-bottom: 200px;
-}
-*/
 .divider-general-ser{/*LINEA DIVISION ENTRE  SECTORES DE PAGINA PRINCIPAL (INDEX)*/
     width: 100%;
     height:2px;
@@ -46,6 +38,49 @@ margin-bottom:2px:
     background-color:  #00507D;
     position: relative;
 }
+
+/*=======================================carousel=============================*/
+/* General carousel */
+.carousel-inner{
+  margin-top:50px ;
+  position: relative;
+  width: 250px;
+  height: 535px;
+  margin-bottom:0px;
+}
+
+/* Main */
+#main > .container {
+  box-shadow: 0 0 20px #1A365F;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 70, 145, 0.75);
+  height: 100%;
+    left: 0;
+  top: 0;
+  padding: 30px 45px;
+  text-align: left;
+  width: 340px;
+}
+
+  .carousel-caption img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+/* Helpers */
+.mar-top-80 {
+  margin-top: 80px;
+}
+
+/*=====================================fin caruosel========================================*/
+
+
+
+
 .section-title { 
 border-top: 4px solid;
 margin-bottom: 60px;
@@ -66,7 +101,7 @@ display: inline-block;
  font-size: 20px; 
 }
 
-#about .section-title { border-color:  #004A96 ; }/*1*/
+#about .section-title { border-color:  #004A96 ; }
 
 #services .section-title { border-color: #3474B4 }
 #services h2 { background-color: #3474B4; }
@@ -117,14 +152,7 @@ a.largeButton.contactBgColor {
     border-color: #9f164d; 
 }
 
-#navigation_right { 
-    float: left;
-    width: 20%;
 
-    height: 100%; 
-    position: fixed; 
-    background-color: #004A96; 
-    color: white; }
 
     .logo { 
         margin: 0px 0; 
@@ -332,10 +360,12 @@ li.contact a.active { color: #e3387c;
   color: #004691;
    }
 
-.member-item { overflow: hidden;
+.member-item { 
+  overflow: hidden;
  height: auto;
   }
-.member-item:hover .overlay { opacity: 1;
+.member-item:hover .overlay { 
+  opacity: 1;
  visibility: visible;
   -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -419,31 +449,38 @@ li.contact a.active { color: #e3387c;
 .story-image { margin-top: 30px;
  overflow: hidden;
   }
-.story-image img { width: 100%; 
+.story-image img {
+ width: 100%; 
   height: auto; 
 }
 
+/*========================================================================*/
 .service-item { 
-background-color:#00196D;
- color: white;
-  }
-.service-item .service-icon { width: 25%;
- float: left; overflow: hidden;
-  display: inline-block;
-   text-align: center;
+background-color:#fff;
+ color: #02559B;
+ }
+
+  
+  .service-item .service-icon { 
+    width: 25%;
+    float: left; 
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
     margin-top: 30px;
-     height: 100%;
-      }
+    height: 100%;
+  }
 .service-item .service-content { 
-  width: 75%; 
+  width: 100%; 
   overflow: hidden;
    text-align: center;
-    padding: 20px 20px 20px 0;
+  padding: 20px 20px 20px 0;
      }
-.service-item .service-content h3 { margin: 0;
- font-size: 20px;
+.service-item .service-content h3 { 
+margin: 0;
+font-size: 20px;
   }
-
+/*===========================================================================*/
 .our-skills { margin-top: 80px
 }
 .our-skills h3 { color: #3474B4;
@@ -690,21 +727,26 @@ video{
 
 
 
-/*======================= IZQUIERDA DERECHA CENTRO ==================== */
-
 /***************======================== ESTILOS DEL HEADER y NAV  **************************************************************/
 .header{
-    /*background-color: #004A96;*/ /*BARRA AZUL NAV HEADER CABECERA*/
+    background-color: #004A96; /*BARRA AZUL NAV HEADER CABECERA*/
     height: 50px;
     color: #fff;/*COLOR  BLANCO DE  LETRAS DE  LEYENDA SOLUCIONES INT.*/
-position: fixed;
+    position: fixed;
     z-index: 97;
-   
-  
 }
 
-/**/
-
+.logo{/*LEYENDA LETRA CABECERA SOLUCIONES*/
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;/*izquierda*/
+}
 
 .navigation{/*NAVEGACION EN CABECERA LISTA DE OPCIONES*/
     height: 50px;
@@ -774,6 +816,7 @@ position: fixed;
 .button-menu-mobile:hover{
     color: #fff;
 }
+/*///ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU /////////////////*/
 /*//////////////////////////////ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU //////////////////////////////////////////////*/
 
 /***************==============================  ESTILOS  DE PIE DE PAGINA ============================================================***************/
@@ -981,18 +1024,18 @@ color: #556370;
     transition: all 0.5s;
 
 }
-.left{
+/*.left{
     float: left;
     background:blue
-}
+}*/
 .right{
     float: right;
     background:#fff
 }
-.center{
+/*.center{
     background:#EBF5FB;
    display:inline-block
-}
+}*/
 .folio-img{
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
