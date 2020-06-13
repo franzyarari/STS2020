@@ -457,7 +457,7 @@ li.contact a.active { color: #e3387c;
 /*========================================================================*/
 .service-item { 
 background-color:#fff;
- color: #02559B;
+ color: #1A365F;
  }
 
   
@@ -691,13 +691,13 @@ video{
     background: transparent;
     width: 29px;
     height: auto;
-    color: #001e57;/*/COLOR  AZUL OSCURO DEL BOTON ACTUALIZADOR*/
+    color: #00507D;
     line-height: 25px;
     font-size: 30px;
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
-    text-shadow: 0 0 2px #63FF45;/*COLOR VERDE  FOSFORESENTE AL SOBREVOLAR EL BOTON*/
+    text-shadow: 0 0 5px #63FF45;
     display: none;
 }
 
@@ -816,7 +816,7 @@ video{
 .button-menu-mobile:hover{
     color: #fff;
 }
-/*///ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU /////////////////*/
+
 /*//////////////////////////////ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU //////////////////////////////////////////////*/
 
 /***************==============================  ESTILOS  DE PIE DE PAGINA ============================================================***************/
@@ -842,7 +842,7 @@ video{
     color: #fff;
 }
 .links-footer li a:hover{
-    color: #EEEBC2; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
+    color: #63FF45; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
     text-decoration: none;
 }
 .links-footer li a:active,
@@ -851,9 +851,8 @@ video{
     text-decoration: none;
     color: #FFCA28; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
 }
-/*=============================================================================                                                                                           ESTILOS INDEX 
-================================================*/
-.Logo-Ins-Index img{/*=======logo central index===================================*/
+/*==========================   ESTILOS INDEX =======================================*/
+.Logo-Ins-Index img{/*=======logo central index=======================*/
     width: 530px;
    height: auto;
     margin: auto;

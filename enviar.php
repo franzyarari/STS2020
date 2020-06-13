@@ -1,19 +1,65 @@
 
-<!--  -->
+<!-- ===================================================================================================== -->
 <?php
 
-$destino  = "fyarari@sts.com.bo";
+$destino  = "fyarari@sts.com.bo" ;
 $nombre   = $_POST["nombre"];
 $correo   = $_POST["correo"];
 $telefono = $_POST["telefono"];
 $mensaje  = $_POST["mensaje"];
 
-$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTeléfono: " .$telefono . "\nMensaje: " . $mensaje;
+$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " .$telefono . "\nMensaje: " . $mensaje;
 
-mail($destino, "Formulario Contacto Pagina Web STS ", $contenido);
+mail($destino, "Contacto desde la Página Web STS", $contenido);
 
-header("Location:contactos.html");
+// <!-- ===================================================================================================== -->
 
+$destino  = "franzyarari@gmail.com" ;
+$nombre   = $_POST["nombre"];
+$correo   = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$mensaje  = $_POST["mensaje"];
+
+$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " .$telefono . "\nMensaje: " . $mensaje;
+
+mail($destino, "Contacto desde la Página Web STS", $contenido);
+
+// <!-- ===================================================================================================== -->
+
+$destino  = "rpayrumani@sts.com.bo" ;
+$nombre   = $_POST["nombre"];
+$correo   = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$mensaje  = $_POST["mensaje"];
+
+$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " .$telefono . "\nMensaje: " . $mensaje;
+
+mail($destino, "Contacto desde la Página Web STS", $contenido);
+
+
+// <!-- ===================================================================================================== -->
+
+$destino  = "jtarqui@sts.com.bo" ;
+$nombre   = $_POST["nombre"];
+$correo   = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$mensaje  = $_POST["mensaje"];
+
+$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " .$telefono . "\nMensaje: " . $mensaje;
+
+mail($destino, "Contacto desde la Página Web STS", $contenido);
+
+// <!-- ===================================================================================================== -->
+
+$destino  = "lugarte@sts.com.bo" ;
+$nombre   = $_POST["nombre"];
+$correo   = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$mensaje  = $_POST["mensaje"];
+
+$contenido= "Nombres: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " .$telefono . "\nMensaje: " . $mensaje;
+
+mail($destino, "Contacto desde la Página Web STS", $contenido);
 
 
 ?>

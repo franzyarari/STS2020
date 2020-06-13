@@ -284,7 +284,7 @@ font-size: 20px;
   }
 /*===========================================================================*/
 
-/* /////////////////////////////////////////////////////////////////////////////PIE//////////////////////////////////////////////////////////////////////////*/
+/* ///////////////////////////////PIE//////////////////////////////////////////////////////////////////////////*/
 .first-footer { 
   background-color: #556370;
    padding: 50px;
@@ -349,7 +349,7 @@ html, body {
     background: transparent;
     width: 29px;
     height: auto;
-    color: #001e57;/*/COLOR  AZUL OSCURO DEL BOTON ACTUALIZADOR*/
+    color: #00507D;/*/COLOR  AZUL OSCURO DEL BOTON ACTUALIZADOR*/
     line-height: 25px;
     font-size: 30px;
     text-align: center;
@@ -453,6 +453,7 @@ html, body {
 /*//////////////////////////////ACA EMPIEZA LOS DIEÑOS PARA EL MEGA MENU //////////////////////////////////////////////*/
 
 /***************==============================  ESTILOS  DE PIE DE PAGINA ============================================================***************/
+/***************==============================  ESTILOS  DE PIE DE PAGINA ============================================================***************/
 .footer{ 
     clear:both;
     color: #fff;
@@ -466,8 +467,24 @@ html, body {
     text-align: center;
     border-top: 1px solid rgba(189, 217, 241, 0.5); /*COLOR LINEA EN PIE DE PAGINA*/
 }
+.links-footer,
+.subtitles-footer{
+    padding-left: 50px;
+}
 
-/*============*/
+.links-footer li a{
+    color: #fff;
+}
+.links-footer li a:hover{
+    color: #63FF45; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
+    text-decoration: none;
+}
+.links-footer li a:active,
+.links-footer li a:focus{
+    outline: none;
+    text-decoration: none;
+    color: #FFCA28; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
+}
 /*==========================Nav fija parte izquierda=================================================*/
 .scroll-navigation-ins{
 position: fixed;
@@ -601,7 +618,7 @@ color: #556370;
 
 .containera .card h4{
     font-weight: 600;
-    color: #DDE8F0;
+    color: #FFFFFF;
 }
 
 .containera .card p{

@@ -56,7 +56,7 @@ video{
 }
 
 .titles-mega-menu{/*TIPO DE LETRA para titulo mega menu DE  PAGINA */
-    font-family: 'geneva','verdana','sans-serif';
+    font-family: 'AVENIR','verdana','sans-serif';
 	font-size: 16px;
     
 }
@@ -73,13 +73,13 @@ video{
     background: transparent;
     width: 29px;
     height: auto;
-    color: #001e57;/*/COLOR  AZUL OSCURO DEL BOTON ACTUALIZADOR*/
+    color: #00507D;/*/COLOR  AZUL OSCURO DEL BOTON ACTUALIZADOR*/
     line-height: 25px;
     font-size: 30px;
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
-    text-shadow: 0 0 2px #63FF45;/*COLOR VERDE  FOSFORESENTE AL SOBREVOLAR EL BOTON*/
+    text-shadow: 0 0 5px #63FF45;/*COLOR VERDE  FOSFORESENTE AL SOBREVOLAR EL BOTON*/
     display: none;
 }
 
@@ -106,7 +106,7 @@ video{
     padding: 0;
     background-color:  #0F44B1 ;
 }
-
+/*===================================================================================================*/
 .service-banner { 
   background-color: #FFA81E;
   text-align: center;
@@ -118,7 +118,7 @@ video{
  font-size: 20px;
  color:#212529 ;
   }
-
+/*=======================================================================================================*/
 .table > tbody > tr > td,
 .table > thead > tr > th{
     vertical-align: middle;/*medio*/
@@ -297,7 +297,7 @@ video{
     color: #fff;
 }
 .links-footer li a:hover{
-    color: #EEEBC2; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
+    color: #63FF45; /*COLOR NARANJA CLARO DE SOBREPUESTO EN PIE DE PAGINA*/
     text-decoration: none;
 }
 .links-footer li a:active,
@@ -327,14 +327,135 @@ video{
     color: #6DC72A;/*COLOR DE ICONOS MEDIA INDEX*/
 }
 
-/************** =====   |Sitios de la institución ***************/
+/****************************/
+/*===============================================================================*/
+
+/*=====================================inicio cards========================================*/
+.containera{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background: #fff;
+    
+}
+
+.containera .card{
+    width: 270px;
+    height: 230px;
+    border-radius: 3px;
+    box-shadow: 0 0 20px #1A365F;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: #01204C;
+}
+
+.containera .card:hover{
+   /* transform: translateY(-15px);*/
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.containera .card img{
+    width: 100%;
+    height: 180px;
+}
 
 
-/************** Estilos eventos***************/
+.containera .card h4{
+    font-weight: 600;
+    color:#fff;
+    padding-top: 7px;
+}
 
-/*
-=                                                                                                                                              ESTILOS DE INSTITUCION                                      =
-===========================================================*/
+.containera .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.containera .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/*=====================================fin cards========================================*/
+
+.member-item { 
+/*  overflow: hidden;
+ height: auto;*/
+  }
+.member-item:hover .overlay { 
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+      }
+
+.member-thumb {
+
+/*  overflow: hidden;
+   height: auto;
+    position: relative;*/
+     }
+/*.member-thumb img {
+
+}*/
+.member-thumb .overlay { 
+  position: absolute;
+  top: 0; 
+  right: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 210, 239, 0.6);
+}
+.btn-ver{
+width: 100px;
+height: 50px;
+margin-top: 70px;
+background-color:#00DDFF ;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+font-family: 'avenir', sans-serif;
+color: #fff;
+}
+
+
+.member-content { margin-top: 10px;
+ overflow: hidden;
+  text-align: center;
+   }
+.member-content h4 { 
+ text-transform: uppercase;
+ font-size: 18px;
+  color: #004691;
+   }
+
+
+.diagonal { 
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, #C6C6C5 50%, #1A365F 50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+/*========================================================================================================*/
+
+/************** **************/
+
+/*=ESTILOS DE INSTITUCION   ===========================================================*/
 /*************** Estilos de la navegacion ***************/
 .info-section-ins article {
     padding: 50px 0;
